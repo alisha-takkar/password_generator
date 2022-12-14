@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Password Generator</h1><br>
+
+        <div class="box "></div><br>
+        <label for="length" class="label-main">LENGTH</label><br>
+        <div class="box a">
+        <input type="range" name="length" id="length" min="4" max="32"><br>
+        </div>
+
+        <label for="settings" class="label-main a"> SETTINGS </label><br>
+
+        <div class="box">
+        <label for="upper" class="label">Include Uppercase</label>
+        <label class="switch">
+        <input type="checkbox" name="upper" id="upper">
+        <span class="slider round"></span>
+        </label>
+        </div>
+
+        <div class="box">
+        <label for="lower" class="label">Include Lowercase</label>
+        <label class="switch">
+        <input type="checkbox" name="lower" id="lower">
+        <span class="slider round"></span>
+        </label>
+        </div>
+
+        <div class="box">
+        <label for="number" class="label">Include Numbers</label>
+        <label class="switch">
+        <input type="checkbox" name="number" id="number"> 
+        <span class="slider round"></span>
+        </label>
+        </div>
+
+        <div class="box">
+        <label for="symbols" class="label">Include Symbols</label>
+        <label class="switch">
+        <input type="checkbox" name="symbols" id="symbols">
+        <span class="slider round"></span>
+        </label>
+        </div>
+
+        <button type="submit">GENERATE PASSWORD</button>
+    </div>
+</body>
+</html>

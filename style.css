@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #3DA9F1;
+}
+
+.main{
+    width: 33%;
+    margin: auto;
+    background-color: #0E153A;
+    border-radius: 20px;
+    margin-top: 5%;
+
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    background-color: #3A4268;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1{
+    color: #FEFEFE;
+    background-color: #0E153A;
+    margin-top: 10%;
+    margin-left: 15%; 
+    padding-top: 5%; 
+}
+
+label,
+input{
+    color: #FEFEFE;
+    background-color: #3A4268;
+}
+
+.label-main{
+    margin-left: 5%;
+    background-color: #0E153A;
+}
+
+input{
+    width: 90%;
+    padding: 10%;
+    margin-left: 5%;
+    padding: 1%;
+}
+
+.label{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #534EE8;
+    -webkit-transition: .4s;
+    transition: .4s; 
+}
+
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input[type=checkbox]:checked + .slider {
+    background-color: #534EE8;
+}
+  
+input[type=checkbox]:focus + .slider {
+    box-shadow: 0 0 1px #534EE8;
+}
+  
+input[type=checkbox]:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}  
+
+.slider.round {
+   border-radius: 34px;
+}
+  
+.slider.round:before {
+   border-radius: 50%;
+}
+
+button{
+    color: white;
+    font-size: medium;
+    background-image: linear-gradient(to right, #8093FE, #882EC8);
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    cursor: pointer;
+    width: 90%;
+    padding: 2%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0;
+}
+
+.a{
+    margin-bottom: 5%;
+}
